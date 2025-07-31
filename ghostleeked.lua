@@ -1,0 +1,63 @@
+local Luna = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nebula-Softworks/Luna-Interface-Suite/refs/heads/master/source.lua", true))()
+local Window = Luna:CreateWindow({
+	Name = "ghostleeked's script", -- This Is Title Of Your Window
+	Subtitle = nil, -- A Gray Subtitle next To the main title.
+	LogoID = "101360889876395", -- The Asset ID of your logo. Set to nil if you do not have a logo for Luna to use.
+	LoadingEnabled = true, -- Whether to enable the loading animation. Set to false if you do not want the loading screen or have your own custom one.
+	LoadingTitle = "Welcome Ghostleeked.", -- Header for loading screen
+	LoadingSubtitle = "Welcome to your script", -- Subtitle for loading screen
+
+	ConfigSettings = {
+		RootFolder = nil, -- The Root Folder Is Only If You Have A Hub With Multiple Game Scripts and u may remove it. DO NOT ADD A SLASH
+		ConfigFolder = "Ghostleeked" -- The Name Of The Folder Where Luna Will Store Configs For This Script. DO NOT ADD A SLASH
+	},
+
+	KeySystem = true, -- As Of Beta 6, Luna Has officially Implemented A Key System!
+	KeySettings = {
+		Title = "Key System",
+		Subtitle = "Key System",
+		Note = "Dm edlcvc2 for key",
+		SaveInRoot = false, -- Enabling will save the key in your RootFolder (YOU MUST HAVE ONE BEFORE ENABLING THIS OPTION)
+		SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+		Key = {"ghostleeked"}, -- List of keys that will be accepted by the system, please use a system like Pelican or Luarmor that provide key strings based on your HWID since putting a simple string is very easy to bypass
+		SecondAction = {
+			Enabled = true, -- Set to false if you do not want a second action,
+			Type = "Link", -- Link / Discord.
+			Parameter = "" -- If Type is Discord, then put your invite link (DO NOT PUT DISCORD.GG/). Else, put the full link of your key system here.
+		}
+	}
+})
+local Tab = Window:CreateTab({
+	Name = "Booster Scripts",
+	Icon = "view_in_ar",
+	ImageSource = "Material",
+	ShowTitle = true -- This will determine whether the big header text in the tab will show
+})
+local Button = Tab:CreateButton({
+	Name = "FF2",
+	Description = nil, -- Creates A Description For Users to know what the button does (looks bad if you use it all the time),
+    	Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Dejaunisgood/Nnnn/refs/heads/main/obfuscated.lua%20(14).txt"))()   -- The function that takes place when the button is pressed
+    	end
+})
+local Button = Tab:CreateButton({
+	Name = "Basketball Legends",
+	Description = nil, 
+	Callback = function()
+       loadstring(game:HttpGet('https://api.exploitingis.fun/loader', true))()
+	end
+})
+local Button = Tab:CreateButton({
+	Name = "Tha Bronx 3",
+	Description = nil,
+	Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/bronxkid/thabronx3/refs/heads/main/e"))()
+	end
+})
+local Button = Tab:createButton({
+	Name = "Hoopz",
+	Description = nil,
+	Callback = function()
+       loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/bf15a15feb3e074f81db01496cbb48e2.lua"))()
+	end
+})	
